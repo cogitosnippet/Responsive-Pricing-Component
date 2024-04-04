@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <p class="logo-heading">Simple, traffic-based pricing</p>
+      <p class="logo-info">Sign up for our 30-day trial. No credit card required</p>
+    </div>
+    <div class="dashboard">
+      <div class="upper">
+        <div class="about-product">
+          <p class="product-info"><span id="product-pages">10K</span> PAGEVIEWS</p>
+          <p class="product-price hidden"><span id="product-amount">$8.00 </span><span class="price-duration">/month</span></p>
+        </div>
+        <div class="slidebar-container">
+          <input type="range" class="slidebar" min="1" max="5" step="1" value="1" id="range-input">
+        </div>
+        <p class="product-price hidden-mobile"><span id="product-amount-mobile">$8.00 </span><span class="price-duration">/month</span></p>
+        <div class="billing-type">
+          <label for="checkbox" class="billing-info">Monthly Billing</label>
+          <label class="switch">
+            <input type="checkbox" id="checked">
+            <span class="slider"></span>
+          </label>
+          <label for="checkbox" class="billing-info">Yearly Billing</label>
+          <div class="discount">25% discount</div>
+          <div class="discount-mobile">-25%</div>
+        </div>
+      </div>
+      <hr>
+      <div class="lower">
+        <div class="start-info">
+          <div class="features">
+            <p class="li"><img src="images/icon-check.svg" class="icon">Unlimited websites</p>
+            <p class="li"><img src="images/icon-check.svg" class="icon">100% data ownership</p>
+            <p class="li"><img src="images/icon-check.svg" class="icon">Email reports</p>
+          </div>
+          <button class="start-button">Start My trial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution"> 
+    Coded by <a href="#">Gautam</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
